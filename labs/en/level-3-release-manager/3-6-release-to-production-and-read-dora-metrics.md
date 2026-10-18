@@ -24,7 +24,7 @@ depends_on:
 
 **Level**: 3 Release Manager
 
-**Time**: ~1 h 10<!-- observed --> (observed: median 1 h 14, 4 learners, fastest 21 min)<!-- /observed -->
+**Time**: ~1 h<!-- observed --> (observed: median 1 h 01, 5 learners, fastest 41 min)<!-- /observed -->
 
 **You will**: release to production, and then measure whether your pipeline is any good.
 
@@ -386,6 +386,26 @@ Command documentation: [hardis:doc:dora-report](https://sfdx-hardis.cloudity.com
 - A DORA report in `docs/dora/`
 
 ## If it goes wrong
+
+**The Pull Request from `uat` into `preprod` has a conflict in `config/.sfdx-hardis.yml`.**
+Two things together cause it. Your `preprod` came from a `main` newer than the course your
+`integration` started from (**Sync fork** on GitHub moves `main`), and a course update reached
+`integration` as a **Squash and merge** instead of the merge commit **Update my course** makes. Git
+then cannot see that both branches carry the same course changes, and it stops where your pipeline
+settings sit next to a line the course changed. Nothing is lost: `uat` holds the right file. Bring
+`preprod` into `uat` through a branch of its own, from the **Command Palette** of VS Code:
+
+1. **Git: Fetch**
+2. **Git: Create Branch From...**, pick **origin/uat**, and name it `fix/merge-preprod-into-uat`
+3. **Git: Merge...**, and pick **origin/preprod**, under **remote branches**
+4. Open `config/.sfdx-hardis.yml` under **Merge Changes**, click **Accept Current Change** above each
+   conflict, save, click **+** on its row, then **Commit**. Current is `uat`, which already has the
+   course changes and your settings
+5. **Publish Branch**, then on GitHub open its Pull Request into `uat`, wait for the checks, and
+   merge it with **Merge pull request**, never a squash: a squash brings the conflict back
+
+The Pull Request into `preprod` then has no conflict. Its check runs again and stops on the
+deliverability step, as step 2 says.
 
 **The deployment to production fails on a component that worked in preprod.**
 Production has drifted, or has something preprod does not: an extra validation rule, a record type,

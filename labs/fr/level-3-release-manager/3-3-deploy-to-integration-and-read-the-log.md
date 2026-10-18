@@ -5,7 +5,7 @@ description: "Lisez un log de déploiement sfdx-hardis, trouvez ce qu'un joker .
 level: 3
 lab: 3
 lang: fr
-source_rev: "5f2d46d854b7cb1b80cfd512e94abb81ae96055f"
+source_rev: "154f841b2e4c36c20921478c276a785558a82b3c"
 screenshots:
   - annotated/vscode/pipeline-config-deployment--delta
   - annotated/vscode/orgs-manager
@@ -28,7 +28,7 @@ depends_on:
 
 **Niveau** : 3 Release Manager
 
-**Durée** : ~1 h 15<!-- observed --> (observé : médiane 1 h 19, 6 participants, le plus rapide 51 min)<!-- /observed -->
+**Durée** : ~1 h 35<!-- observed --> (observé : médiane 1 h 37, 5 participants, le plus rapide 38 min)<!-- /observed -->
 
 **Vous allez** : lire correctement un log de déploiement, relire une Pull Request dont le contrôle
 échoue sur un champ qui est pourtant dans son diff et trouver le fichier qui le cache, puis
@@ -549,4 +549,4 @@ Welcome page > **Training: Level 3** > **Check my work**, puis choisissez le **L
 - [Les rouages de Smart Deploy](https://sfdx-hardis.cloudity.com/salesforce-devops-smart-deployment/)
 - [Rattraper une action de déploiement en échec](https://sfdx-hardis.cloudity.com/salesforce-devops-work-on-user-story-deployment-actions/#recover-a-failed-action)
 
-[Suite : Lab 3.4 - Trois Pull Requests se percutent : choisir l'ordre de merge](3-4-merge-colliding-pull-requests.md){ .md-button .md-button--primary }
+[Suite : Lab 3.4 - Trois Pull Requests pour une release : revoir l'ordre de merge](3-4-merge-colliding-pull-requests.md){ .md-button .md-button--primary }
