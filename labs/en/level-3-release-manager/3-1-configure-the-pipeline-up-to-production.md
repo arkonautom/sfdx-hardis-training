@@ -37,7 +37,7 @@ depends_on:
 
 **Level**: 3 Release Manager
 
-**Time**: ~1 h 05<!-- observed --> (observed: median 1 h 07, 6 learners, fastest 17 min)<!-- /observed -->
+**Time**: ~2 h 05<!-- observed --> (observed: median 2 h 09, 5 learners, fastest 2 h)<!-- /observed -->
 
 **You will**: turn a two-stage pipeline into a four-stage one that reaches production, give the two
 new stages their org and a credential a real project can live with, and publish all of it the way
@@ -138,6 +138,15 @@ at the top right. Type `preprod` as the name **(1)**, leave the source on your f
 
 Then tell VS Code: in the **Source Control** panel, **...** menu, **Pull, Push** > **Fetch**. The
 next steps list the branches of your fork, and a branch VS Code has not fetched is not in the list.
+
+!!! warning "A course update merged with a squash comes back here"
+    `preprod` takes `main` as your fork has it. If you clicked **Sync fork** on GitHub, that `main`
+    holds course changes newer than the ones your `integration` started from. That is fine as long
+    as each course update reached `integration` through **Update my course**, which merges it with a
+    merge commit. If you ever opened a course update Pull Request yourself and merged it with
+    **Squash and merge**, the first Pull Request from `uat` into `preprod`, in [Lab 3.6 step 2](3-6-release-to-production-and-read-dora-metrics.md#2-rehearse-in-preprod), will
+    stop on a conflict in `config/.sfdx-hardis.yml`. Lab 3.6 explains the way out under **If it goes
+    wrong**.
 
 ### 3. Protect preprod and main
 

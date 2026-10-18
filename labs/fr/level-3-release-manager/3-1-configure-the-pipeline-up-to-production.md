@@ -5,7 +5,7 @@ description: "Étendez une pipeline Salesforce à deux étages jusqu'à la produ
 level: 3
 lab: 1
 lang: fr
-source_rev: "f7a4cfc638bef7f4aea6283c123b557910f877d4"
+source_rev: "a23e4c00dca2dfd478b1eb97a36eabba9f20606d"
 screenshots:
   - annotated/vscode/devops-pipeline--one-column
   - annotated/web/github-new-branch
@@ -37,7 +37,7 @@ depends_on:
 
 **Niveau** : 3 Release Manager
 
-**Durée** : ~1 h 05<!-- observed --> (observé : médiane 1 h 07, 6 participants, le plus rapide 17 min)<!-- /observed -->
+**Durée** : ~2 h 05<!-- observed --> (observé : médiane 2 h 09, 5 participants, le plus rapide 2 h)<!-- /observed -->
 
 **Vous allez** : transformer une pipeline à deux étages en une pipeline à quatre étages qui atteint la
 production, donner aux deux nouveaux étages leur org et un identifiant avec lequel un vrai projet peut
@@ -146,6 +146,15 @@ sur votre fork et `main` **(2)**, et cliquez sur **Create new branch** **(3)**.
 Prévenez ensuite VS Code : dans le panneau **Source Control**, menu **...**, **Pull, Push** >
 **Fetch**. Les étapes suivantes listent les branches de votre fork, et une branche que VS Code n'a
 pas récupérée n'est pas dans la liste.
+
+!!! warning "Une mise à jour du cours mergée en squash revient ici"
+    `preprod` prend `main` tel que votre fork l'a. Si vous avez cliqué **Sync fork** sur GitHub, ce
+    `main` contient des changements du cours plus récents que ceux dont votre `integration` est
+    partie. Aucun souci tant que chaque mise à jour du cours est arrivée dans `integration` par
+    **Update my course**, qui la merge avec un merge commit. Si vous avez un jour ouvert vous-même
+    une Pull Request de mise à jour du cours et l'avez mergée avec **Squash and merge**, la première
+    Pull Request de `uat` vers `preprod`, à l'[étape 2 du Lab 3.6](3-6-release-to-production-and-read-dora-metrics.md#2-repeter-en-preprod), s'arrêtera sur un
+    conflit dans `config/.sfdx-hardis.yml`. Le Lab 3.6 donne la sortie sous **En cas de problème**.
 
 ### 3. Protéger preprod et main
 
