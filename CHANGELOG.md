@@ -3,8 +3,52 @@
 What changed in the course, for learners and trainers. The course has no versions: each section is
 a day, newest first, and a change goes under the date of the day it is made.
 
+## 2026-10-23
+
+- Guinea Run invites you to send your scores as soon as one would enter the top 5 of a world, of the overall total or of Pipeline Pinball.
+- Pipeline Pinball on a phone: the upper Production floor shows whole, and the messages and buttons fade while the ball passes under them.
+- The Guinea Run Hall of Fame page is no longer in the site menu.
+- The Guinea Run Hall of Fame page fits a phone screen: the avatar, handle and badge of a player share one column, and the boards no longer scroll sideways. Pipeline Pinball now comes right after the total, before the world boards.
+
+## 2026-10-22
+
+- Guinea Run has a bonus table for those who finish all ten worlds: Pipeline Pinball, a pinball game with a mission per world and its own Hall of Fame board.
+- The Hall of Fame answer on a score issue numbers the worlds from 0, as the game does.
+- Sending your Guinea Run scores works from the GitHub mobile app too: it used to open a blank issue.
+- Guinea Run, the game hidden in every page, is online: the Konami code or five taps on the guinea pig in the footer open it, on a computer or a smartphone.
+- The guinea pig of Guinea Run squeaks with a new, shorter set of wheeks when it jumps.
+- Guinea Run has Easy, Normal and Hard modes: Normal runs 1.5 times faster for 1.5 times the points, Hard twice as fast for twice the points.
+- Guinea Run has a [Hall of Fame](https://sfdx-hardis-training.cloudity.com/hall-of-fame/): send your scores from the game to GitHub, and beat the bosses fast for a speed bonus.
+
+## 2026-10-21
+
+- Something small and furry now lives in the footer of every page.
+- Every screenshot says it can be enlarged: "click to enlarge" at the end of its caption, and a magnifier when the mouse is over it.
+- The comments under each page show the newest first. The Oldest button above them still switches back.
+- The notes that only some learners need are tip boxes again, as before the step template: Agentforce Vibes and the other editors in Labs 1.1 to 1.4, and the star and LinkedIn banner asides of the three capstones. Lab 1.4 no longer sends anyone to a terminal to open an org.
+
+## 2026-10-20
+
+- Numbered tasks are only what every learner does: the Agentforce Vibes instructions, the ways back when something went wrong and the other ways in are now tip boxes inside the task they belong to.
+- Every step of every lab reads the same way: its goal, what to do as numbered tasks with each screenshot under its task, why, and what you should now see, with a box to tick when it is done. Proposed by [fkramer690](https://github.com/fkramer690) in [#142](https://github.com/hardisgroupcom/sfdx-hardis-training/discussions/142).
+- Labs 3.5, 3.6, 3.7 and 3.10 name the GitHub option to pick for a promotion: Create a merge commit, under the arrow of the green button.
+- Lab 3.1 shows the DevOps Pipeline in the middle of step 8, and its two settings steps are numbered lists.
+- Lab 3.3 says why a failed action has no Retry button, and why re-running the job on GitHub is not the same thing.
+- Simulate my teammates ends with a button that opens the Pull Request it created.
+- Lab 3.7 opens production from Orgs Manager, warns about hotfixes from integration at the top of step 2, and says what to do with a retrofit that brought nothing down.
+
+## 2026-10-19
+
+- Trainers: the lab drivers point to the training scenario of the `e2e` skill of sfdx-hardis, which replaces the `training-e2e` skill.
+- Links to another site (GitHub, Salesforce, the sfdx-hardis documentation) open in a new tab, so the lab stays open.
+- Lab 2.3 says to copy only its four Apex files, and explains the check that fails on the Lab 2.4 batch when it is copied too.
+- Lab 3.8 says what to do when GitHub refuses a push during the configuration: never merge the monitoring branch into `main`, and store the two new secrets of each run.
+
+- Lab 3.1 shows what the scratch org pool, org initialization and replacement rules are for, with a picture of each and its documentation page, without asking you to set them up.
+
 ## 2026-10-18
 
+- Labs 3.1 and 3.6 follow the new gear menu of the DevOps Pipeline: Configure Pipeline Settings, Add or Reconnect a Major Org, Configure Org Initialization, Configure Replacement Rules and Generate DORA Metrics, with their screenshots taken again.
 - Set up my training environment says what it waits for while it turns Dev Hub on, and stops with a clear message when the org does not answer.
 
 ## 2026-10-17
