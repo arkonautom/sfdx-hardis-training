@@ -273,3 +273,5 @@ useSmartDeploymentTests: false
 allowedPromotionSteps:
   - source: uat
     target: preprod
+detectManualCherryPicks: false
+monitoringRepository: https://github.com/arkonautom/sfdx-hardis-training-monitoring
