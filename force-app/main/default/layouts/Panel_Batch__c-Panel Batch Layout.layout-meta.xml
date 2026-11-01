@@ -26,10 +26,10 @@
                 <behavior>Edit</behavior>
                 <field>Cost__c</field>
             </layoutItems>
-            <layoutItems>
+            <!--layoutItems>
                 <behavior>Edit</behavior>
                 <field>Warranty_Years__c</field>
-            </layoutItems>
+            </layoutItems-->
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Supplier__c</field>
